@@ -1,45 +1,90 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>BEATS</title>
+  <title>22Orion Beats</title>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: sans-serif;
-      background-color: #111;
-      color: #fff;
-      padding: 20px;
+      margin: 0;
+      padding: 40px 20px;
+      background-color: #0a0a0a;
+      color: #eee;
+      font-family: 'Roboto', sans-serif;
     }
     h1 {
+      font-family: 'Anton', sans-serif;
+      font-size: 3rem;
       color: #f90;
+      letter-spacing: 2px;
+      text-align: center;
+      margin-bottom: 60px;
     }
     .beat {
-      margin-bottom: 40px;
-      border-bottom: 1px solid #444;
-      padding-bottom: 20px;
+      background: #1a1a1a;
+      border: 1px solid #333;
+      border-radius: 12px;
+      padding: 30px;
+      margin: 0 auto 50px auto;
+      max-width: 700px;
+      box-shadow: 0 0 20px rgba(249, 144, 0, 0.1);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .beat:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 30px rgba(249, 144, 0, 0.2);
+    }
+    .beat h2 {
+      margin-top: 0;
+      font-family: 'Anton', sans-serif;
+      font-size: 1.5rem;
+      color: #f90;
+      letter-spacing: 1px;
+    }
+    audio {
+      width: 100%;
+      margin-top: 15px;
+      outline: none;
     }
     button {
-      padding: 10px 20px;
-      background-color: #f90;
+      margin-top: 20px;
+      padding: 12px 24px;
+      background: #f90;
       border: none;
-      color: #111;
-      font-weight: bold;
+      color: #0a0a0a;
+      font-family: 'Anton', sans-serif;
+      font-size: 1rem;
+      letter-spacing: 1px;
       cursor: pointer;
+      border-radius: 8px;
+      transition: background 0.2s ease, color 0.2s ease;
     }
     button:hover {
-      background-color: #fff;
+      background: #fff;
       color: #111;
+    }
+    form {
+      display: flex;
+      justify-content: center;
+    }
+    @media(max-width: 768px) {
+      h1 {
+        font-size: 2.2rem;
+      }
+      .beat h2 {
+        font-size: 1.2rem;
+      }
     }
   </style>
 </head>
 <body>
-  <h1>22Orion Beats for Sale</h1>
+  <h1>22Orion Beats</h1>
 
   <div class="beat">
     <h2>TARARA | YUNG SARRIA TYPE BEAT 152BPM Cmin</h2>
     <audio controls>
       <source src="TARARA 152 bpm Cmin.mp3" type="audio/mpeg">
+      Your browser does not support the audio tag.
     </audio>
-    <br><br>
     <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
       <input type="hidden" name="cmd" value="_xclick">
       <input type="hidden" name="business" value="elenamassons@gmail.com">
@@ -54,8 +99,8 @@
     <h2>BLANCO | MELODIC DRILL TYPE BEAT</h2>
     <audio controls>
       <source src="BLANCO 144BPM FMIN.mp3" type="audio/mpeg">
+      Your browser does not support the audio tag.
     </audio>
-    <br><br>
     <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
       <input type="hidden" name="cmd" value="_xclick">
       <input type="hidden" name="business" value="elenamassons@gmail.com">
@@ -66,6 +111,5 @@
     </form>
   </div>
 
-  <!-- Copy this block for each beat -->
 </body>
 </html>
